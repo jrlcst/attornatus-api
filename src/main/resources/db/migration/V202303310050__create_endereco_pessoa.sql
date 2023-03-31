@@ -1,7 +1,6 @@
 create table endereco_pessoa(
     endereco_id bigint auto_increment NOT NULL,
-    pessoa_id bigint auto_increment NOT NULL,
-    is_principal bit
+    pessoa_id bigint auto_increment NOT NULL
 );
 
 alter table endereco_pessoa ADD CONSTRAINT fk_endereco_id foreign key (endereco_id) references endereco(id);
